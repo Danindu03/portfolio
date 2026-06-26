@@ -1445,17 +1445,9 @@ footer {
 
   .nav-links li {
     width: 100%;
-    opacity: 0;
-    transform: translateX(20px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    transform: none;
   }
-  /* button=child 1, span=child 2, li items start at child 3 */
-  .nav-links.open li:nth-child(3) { opacity: 1; transform: translateX(0); transition-delay: 0.08s; }
-  .nav-links.open li:nth-child(4) { opacity: 1; transform: translateX(0); transition-delay: 0.14s; }
-  .nav-links.open li:nth-child(5) { opacity: 1; transform: translateX(0); transition-delay: 0.20s; }
-  .nav-links.open li:nth-child(6) { opacity: 1; transform: translateX(0); transition-delay: 0.26s; }
-  .nav-links.open li:nth-child(7) { opacity: 1; transform: translateX(0); transition-delay: 0.32s; }
-  .nav-links.open li:nth-child(8) { opacity: 1; transform: translateX(0); transition-delay: 0.38s; }
 
   .nav-links a {
     display: block;
