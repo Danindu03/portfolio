@@ -1441,7 +1441,7 @@ footer {
   .nav-drawer-brand {
     display: block;
   }
-  .nav-links.open { right: 0; }
+  .nav-links.open { right: 0; pointer-events: auto; }
 
   .nav-links li {
     width: 100%;
@@ -1449,12 +1449,13 @@ footer {
     transform: translateX(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
-  .nav-links.open li:nth-of-type(1) { opacity: 1; transform: translateX(0); transition-delay: 0.08s; }
-  .nav-links.open li:nth-of-type(2) { opacity: 1; transform: translateX(0); transition-delay: 0.14s; }
-  .nav-links.open li:nth-of-type(3) { opacity: 1; transform: translateX(0); transition-delay: 0.20s; }
-  .nav-links.open li:nth-of-type(4) { opacity: 1; transform: translateX(0); transition-delay: 0.26s; }
-  .nav-links.open li:nth-of-type(5) { opacity: 1; transform: translateX(0); transition-delay: 0.32s; }
-  .nav-links.open li:nth-of-type(6) { opacity: 1; transform: translateX(0); transition-delay: 0.38s; }
+  /* button=child 1, span=child 2, li items start at child 3 */
+  .nav-links.open li:nth-child(3) { opacity: 1; transform: translateX(0); transition-delay: 0.08s; }
+  .nav-links.open li:nth-child(4) { opacity: 1; transform: translateX(0); transition-delay: 0.14s; }
+  .nav-links.open li:nth-child(5) { opacity: 1; transform: translateX(0); transition-delay: 0.20s; }
+  .nav-links.open li:nth-child(6) { opacity: 1; transform: translateX(0); transition-delay: 0.26s; }
+  .nav-links.open li:nth-child(7) { opacity: 1; transform: translateX(0); transition-delay: 0.32s; }
+  .nav-links.open li:nth-child(8) { opacity: 1; transform: translateX(0); transition-delay: 0.38s; }
 
   .nav-links a {
     display: block;
